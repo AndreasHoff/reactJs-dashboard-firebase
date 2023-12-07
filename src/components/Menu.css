@@ -71,6 +71,7 @@ menu ul li.active a::before {
 
 @media only screen and (max-width: 525px) {
     menu {
+        width: 68px;
         min-width: 68px;
     }
 }
