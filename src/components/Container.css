@@ -103,7 +103,9 @@
         margin: 0px 10px;
     }
     
-    .top-container .profile-container .menu-chevron:hover {}
+    .top-container .profile-container .menu-chevron:hover {
+        transition: transform 0.3s ease;
+    }
     
     .top-container .profile-container .menu-container {
         position: absolute;
@@ -148,4 +150,17 @@
         color: #e659ae;
         background: #2c2b36;
         transition: all 0.3s;
+    }
+    
+    @media screen and (max-width: 525px) {
+        .container {
+            width: calc(100% - 68px);
+        }
+        .top-container .search-bar {
+            width: 130px;
+            z-index: 101;
+        }
+        .top-container .search-bar input:focus {
+            width: 320px;
+        }
     }
